@@ -1,0 +1,27 @@
+// Utils
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+// Base
+@import "./base/commons";
+@import "./base/container";
+@import "./base/reset";
+
+// Components
+@import "./components/header-contacts";
+@import "./components/checkbox";
+@import "./components/modal";
+@import "./components/socials";
+
+// Layout
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/strenghts";
+@import "./layouts/benefits";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/filter";
+@import "./layouts/portfolio";
+@import "./layouts/portfolio-effects";
+@import "./layouts/footer";
+@import "./layouts/footer-form";
