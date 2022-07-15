@@ -1,4 +1,4 @@
-/* Сильные стороны */
+// Strenghts
 
 .section__title {
     color: var(--title-text-color);
@@ -9,11 +9,25 @@
 }
 
 .strengths {
-    display: flex;
-
+    
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 10;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+       
+        .strenghts__item {
+            width: 354px;
+            margin: 15px;
+
+            @media screen and (min-width:1200px) {
+                width:270px;
+            }
+        }
+    }
 }
 
 .strengths__text {
@@ -31,14 +45,10 @@
 
     margin-top: 30px;
     margin-bottom: 10px;
-}
 
-.strenghts__item+.strenghts__item {
-    margin-left: 30px;
-}
-
-.strenghts__item {
-    width: 270px;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 /* svg диаграммы */
@@ -49,6 +59,13 @@
     align-items: center;
     background-color: var(--accent-bg-color);
     height: 120px;
-    width: 270px;
 
+    @media screen and (min-width: 768px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+    }
 }
+

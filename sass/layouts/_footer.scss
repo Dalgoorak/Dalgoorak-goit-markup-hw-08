@@ -6,19 +6,35 @@
 
     &__section {
         display: flex;
-        align-items: baseline;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        @media screen and (min-width:768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        
+        }
+
+        @media screen and (min-width:1200px) {
+            text-align: start;
+            flex-wrap: nowrap;
+            justify-content: start;
+            align-items: flex-start;
+        }
     }
 
     &__logo--link {
         color: var(--secondary-text-color);
         text-decoration: none;
-    
+
         font-family: Raleway, sans-serif;
         font-weight: 700;
         font-size: 26px;
         line-height: 1.2;
     }
-    
+
     &__accent {
         color: var(--accent-color);
     }
@@ -34,9 +50,13 @@
         font-style: normal;
         line-height: 1.71;
     }
-    
-    &--item{
+
+    &--item {
         margin-bottom: 9px;
+    }
+
+    @media screen and(max-width:767px) {
+        margin-bottom: 60px;
     }
 }
 
@@ -47,4 +67,3 @@
 
     margin-bottom: 9px;
 }
-

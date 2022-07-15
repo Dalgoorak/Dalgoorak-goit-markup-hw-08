@@ -1,18 +1,41 @@
+
 /* Постоянные клиенты */
 
 .clients__item {
-    width: 170px;
     height: 92px;
+
+    @media screen and (max-width: 767px) {
+        width: 210px;
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 226px;
+        margin: 15px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+    }
 }
 
-.clients__title {
+.clients__title,
+.team__title {
     margin-bottom: 50px;
 
     color: var(--title-text-color);
     font-weight: 700;
-    font-size: 36px;
+
     line-height: 1.17;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+        font-size: 28px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+    }
 }
 
 .clients__item--link {
@@ -20,8 +43,8 @@
     justify-content: center;
     align-items: center;
 
-    width: 100%;
-    height: 100%;
+    width: 210px;
+    height: 92px;
 
     border: 1px solid var(--color-social-network);
     border-radius: 4px;
@@ -29,14 +52,20 @@
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: var(--cubic-bezier);
+
+    @media screen and (min-width:1200px) {
+        width: 170px;
+    }
 }
 
 /* Ссылки на компании */
 
 .clients__list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    margin: -15px;
 }
 
 .clients__item--link:hover,
@@ -44,9 +73,6 @@
     border-color: var(--accent-color);
 }
 
-.clients__item+.clients__item {
-    margin-left: 30px;
-}
 
 .clients__item--icon {
     width: 106px;
@@ -59,7 +85,8 @@
     transition-timing-function: var(--cubic-bezier);
 }
 
-.clients__item--link:hover>.clients__item--icon,
-.clients__item--link:focus>.clients__item--icon {
+.clients__item--link:hover > .clients__item--icon,
+.clients__item--link:focus > .clients__item--icon {
     fill: var(--accent-color);
 }
+

@@ -1,21 +1,35 @@
 /* Contacts */
 
 .contacts {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-    justify-content: center;
+    @media screen and (max-width:1199px) {
+       &__item + &__item {
+        margin-top: 10px;
+    } 
+    }
+  
+    
+
+    @media screen and (min-width: 1200px) {
+        
+        &__item + &__item {
+            margin-left: 30px;
+        }
+        &__icon--mail {
+            margin-right: 10px;
+        }
+    }
 
     &__item {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     &__icon--mail {
         display: block;
         fill: var(--primary-text-color);
-        margin-right: 10px;
+        margin-right: 8px;
+
         width: 16px;
         height: 12px;
 
@@ -24,15 +38,11 @@
         transition-timing-function: var(--cubic-bezier);
     }
 
-    &__item + &__item {
-        margin-left: 50px;
-    }
-
     &__link--mail,
     &__link--phone {
         display: flex;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
         color: var(--primary-text-color);
         font-weight: 500;
         line-height: 1.14;
@@ -46,7 +56,7 @@
     &__icon--smartphone {
         display: block;
         fill: var(--primary-text-color);
-        margin-right: 10px;
+        margin-right: 8px;
         width: 10px;
         height: 16px;
 

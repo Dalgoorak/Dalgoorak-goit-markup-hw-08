@@ -34,7 +34,7 @@
     transition-timing-function: var(--cubic-bezier);
 }
 
-.team__socials--list+.team__socials--list {
+.team__socials--list + .team__socials--list {
     margin-left: 10px;
 }
 
@@ -48,7 +48,14 @@
 /* Присоединяйтесь */
 
 .footer__socials {
-    margin-left: 70px;
+    @media screen and (min-width: 768px ) {
+       margin-left: 165px; 
+    }
+
+    @media screen and (min-width: 1200px ) {
+        margin-left: 70px;
+    }
+    
 }
 
 .footer__socials--text,
@@ -56,6 +63,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    text-align: center;
 
     color: var(--secondary-text-color);
 
@@ -65,8 +73,10 @@
 .footer__socials--list {
     display: flex;
     margin-top: 20px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
 }
-
 
 .footer__socials--link {
     display: block;
@@ -76,7 +86,6 @@
     height: 44px;
     border-radius: 50%;
     background-color: var(--bg-icon);
-
 
     transition-property: background-color;
     transition-duration: 250ms;
@@ -99,12 +108,11 @@
     transition-timing-function: var(--cubic-bezier);
 }
 
-.footer__socials--item+.footer__socials--item {
+.footer__socials--item + .footer__socials--item {
     margin-left: 10px;
 }
 
 .footer__socials--link:focus .footer__socials--icon,
 .footer__socials--link:hover .footer__socials--icon {
     fill: var(--secondary-text-color);
-
 }

@@ -1,13 +1,25 @@
 /* Filter */
 
 .filter {
+    margin: -8px;
     margin-bottom: 50px;
     display: flex;
+    
+    @media screen and (max-width:767px) {
+         flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    }
 
-    &__item+&__item {
-        margin-left: 9px;
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    &__item {
+        margin: 8px;
     }
 
     &__button {
