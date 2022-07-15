@@ -105,14 +105,16 @@
                     компании или частном лице.
                   </p>
                 </div>
-                <img class="portfolio__container--img" srcset="./images/portfolio/mobile/portfolio-mob1-450.jpg 450w, 
-                  ./images/portfolio/mobile/portfolio-mob1-450-2x.jpg 900w, 
-                  ./images/portfolio/tablet/portfolio-tablet1-354.jpg 354w,
-                  ./images/portfolio/tablet/portfolio-tablet1-354-2x.jpg 708w,
-                  ./images/portfolio/laptop/portfolio-laptop1-370.jpg 370w,
-                  ./images/portfolio/laptop/portfolio-laptop1-370-2x.jpg 370w"
-                  src="./images/portfolio/mobile/portfolio-mob1-450.jpg" alt="Ноутбук"
-                  sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                <picture>
+                  <source srcset="./images/portfolio/mobile/portfolio-mob1-450.jpg 450w, 
+                  ./images/portfolio/mobile/portfolio-mob1-450-2x.jpg 900w," media="(max-width: 767px)">
+                  <source srcset="./images/portfolio/tablet/portfolio-tablet1-354.jpg 354w,
+                  ./images/portfolio/tablet/portfolio-tablet1-354-2x.jpg 708w," media="(min-width: 768px)">
+                  <source srcset="./images/portfolio/laptop/portfolio-laptop1-370.jpg 370w,
+                  ./images/portfolio/laptop/portfolio-laptop1-370-2x.jpg 370w"" media=" (min-width: 1200px)">
+                  <img class=" portfolio__container--img" src="./images/portfolio/tablet/portfolio-tablet1-354..jpg"
+                    alt="Ноутбук" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="portfolio__box">
                 <h2 class="portfolio__box--title">Технокряк</h2>
@@ -130,7 +132,19 @@
                     компании или частном лице.
                   </p>
                 </div>
-                <img class="portfolio__container--img" src="./images/Portfolio-2.jpg" alt="Баскетболисты" />
+                <picture>
+                  <source srcset="./images/portfolio/mobile/portfolio-mob2-450.jpg 450w, 
+                                  ./images/portfolio/mobile/portfolio-mob2-450-2x.jpg 900w,"
+                    media="(max-width: 767px)">
+                  <source srcset="./images/portfolio/tablet/portfolio-tablet2-354.jpg 354w,
+                                  ./images/portfolio/tablet/portfolio-tablet2-354-2x.jpg 708w,"
+                    media="(min-width: 768px)">
+                  <source srcset="./images/portfolio/laptop/portfolio-laptop2-370.jpg 370w,
+                                  ./images/portfolio/laptop/portfolio-laptop2-370-2x.jpg 370w"" media=" (min-width:
+                    1200px)">
+                  <img class=" portfolio__container--img" src="./images/portfolio/tablet/portfolio-tablet2-354.jpg"
+                    alt="Баскетболисты" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="portfolio__box">
                 <h2 class="portfolio__box--title">Постер New Orlean vs Golden Star</h2>
@@ -148,7 +162,16 @@
                     компании или частном лице.
                   </p>
                 </div>
-                <img class="portfolio__container--img" src="./images/Portfolio-3.jpg" alt="Логотип рыбного ресторана" />
+                <picture>
+                  <source srcset="./images/portfolio/mobile/portfolio-mob3-450.jpg 450w, 
+                  ./images/portfolio/mobile/portfolio-mob3-450-2x.jpg 900w," media="(max-width: 767px)">
+                  <source srcset="./images/portfolio/tablet/portfolio-tablet3-354.jpg 354w,
+                  ./images/portfolio/tablet/portfolio-tablet3-354-2x.jpg 708w," media="(min-width: 768px)">
+                  <source srcset="./images/portfolio/laptop/portfolio-laptop3-370.jpg 370w,
+                  ./images/portfolio/laptop/portfolio-laptop3-370-2x.jpg 370w"" media=" (min-width: 1200px)">
+                  <img class=" portfolio__container--img" src="./images/portfolio/tablet/portfolio-tablet3-354.jpg"
+                    alt="Логотип рыбного ресторана" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="portfolio__box">
                 <h2 class="portfolio__box--title">Ресторан Seafood</h2>
@@ -166,7 +189,16 @@
                     компании или частном лице.
                   </p>
                 </div>
-                <img class="portfolio__container--img" src="./images/Portfolio-4.jpg" alt="Наушники" />
+                <picture>
+                  <source srcset="./images/portfolio/mobile/portfolio-mob4-450.jpg 450w, 
+                  ./images/portfolio/mobile/portfolio-mob4-450-2x.jpg 900w," media="(max-width: 767px)">
+                  <source srcset="./images/portfolio/tablet/portfolio-tablet4-354.jpg 354w,
+                  ./images/portfolio/tablet/portfolio-tablet4-354-2x.jpg 708w," media="(min-width: 768px)">
+                  <source srcset="./images/portfolio/laptop/portfolio-laptop4-370.jpg 370w,
+                  ./images/portfolio/laptop/portfolio-laptop4-370-2x.jpg 370w"" media=" (min-width: 1200px)">
+                  <img class=" portfolio__container--img" src="./images/portfolio/tablet/portfolio-tablet4-354.jpg"
+                    alt="Наушники" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="portfolio__box">
                 <h2 class="portfolio__box--title">Проект Prime</h2>
@@ -184,7 +216,16 @@
                     компании или частном лице.
                   </p>
                 </div>
-                <img class="portfolio__container--img" src="./images/Portfolio-5.jpg" alt="Коробки" />
+                <picture>
+                  <source srcset="./images/portfolio/mobile/portfolio-mob5-450.jpg 450w, 
+                  ./images/portfolio/mobile/portfolio-mob5-450-2x.jpg 900w," media="(max-width: 767px)">
+                  <source srcset="./images/portfolio/tablet/portfolio-tablet5-354.jpg 354w,
+                  ./images/portfolio/tablet/portfolio-tablet5-354-2x.jpg 708w," media="(min-width: 768px)">
+                  <source srcset="./images/portfolio/laptop/portfolio-laptop5-370.jpg 370w,
+                  ./images/portfolio/laptop/portfolio-laptop5-370-2x.jpg 370w"" media=" (min-width: 1200px)">
+                  <img class=" portfolio__container--img" src="./images/portfolio/tablet/portfolio-tablet5-354.jpg"
+                    alt="Коробки" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="portfolio__box">
                 <h2 class="portfolio__box--title">Проект Boxes</h2>
@@ -202,7 +243,16 @@
                     компании или частном лице.
                   </p>
                 </div>
-                <img class="portfolio__container--img" src="./images/Portfolio-6.jpg" alt="Монитор" />
+                <picture7>
+                  <source srcset="./images/portfolio/mobile/portfolio-mob6-450.jpg 450w, 
+                  ./images/portfolio/mobile/portfolio-mob6-450-2x.jpg 900w," media="(max-width: 767px)">
+                  <source srcset="./images/portfolio/tablet/portfolio-tablet6-354.jpg 354w,
+                  ./images/portfolio/tablet/portfolio-tablet6-354-2x.jpg 708w," media="(min-width: 768px)">
+                  <source srcset="./images/portfolio/laptop/portfolio-laptop6-370.jpg 370w,
+                  ./images/portfolio/laptop/portfolio-laptop6-370-2x.jpg 370w"" media=" (min-width: 1200px)">
+                  <img class=" portfolio__container--img" src="./images/portfolio/tablet/portfolio-tablet6-354.jpg"
+                    alt="Монитор" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture>
               </div>
               <div class="portfolio__box">
                 <h2 class="portfolio__box--title">Inspiration has no Borders</h2>
@@ -220,12 +270,21 @@
                     компании или частном лице.
                   </p>
                 </div>
-                <img class="portfolio__container--img" src="./images/Portfolio-7.jpg" alt="Журнал" />
-              </div>
-              <div class="portfolio__box">
-                <h2 class="portfolio__box--title">Издание Limited Edition</h2>
-                <p class="portfolio__box--text">Дизайн</p>
-              </div>
+                <picture>
+                  <source srcset="./images/portfolio/mobile/portfolio-mob7-450.jpg 450w, 
+                  ./images/portfolio/mobile/portfolio-mob7-450-2x.jpg 900w," media="(max-width: 767px)">
+                  <source srcset="./images/portfolio/tablet/portfolio-tablet7-354.jpg 354w,
+                  ./images/portfolio/tablet/portfolio-tablet7-354-2x.jpg 708w," media="(min-width: 768px)">
+                  <source srcset="./images/portfolio/laptop/portfolio-laptop7-370.jpg 370w,
+                  ./images/portfolio/laptop/portfolio-laptop7-370-2x.jpg 370w"" media=" (min-width: 1200px)">
+                  <img class=" portfolio__container--img" src="./images/portfolio/tablet/portfolio-tablet7-354.jpg"
+                    alt="Журнал" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                  </picture7>
+                 </div>
+                  <div class="portfolio__box">
+                    <h2 class="portfolio__box--title">Издание Limited Edition</h2>
+                    <p class="portfolio__box--text">Дизайн</p>
+                  </div>
             </a>
           </li>
           <li class="portfolio__item">
@@ -238,7 +297,16 @@
                     компании или частном лице.
                   </p>
                 </div>
-                <img class="portfolio__container--img" src="./images/Portfolio-8.jpg" alt="Этикетка" />
+                <picture>
+                  <source srcset="./images/portfolio/mobile/portfolio-mob8-450.jpg 450w, 
+                  ./images/portfolio/mobile/portfolio-mob8-450-2x.jpg 900w," media="(max-width: 767px)">
+                  <source srcset="./images/portfolio/tablet/portfolio-tablet8-354.jpg 354w,
+                  ./images/portfolio/tablet/portfolio-tablet8-354-2x.jpg 708w," media="(min-width: 768px)">
+                  <source srcset="./images/portfolio/laptop/portfolio-laptop8-370.jpg 370w,
+                  ./images/portfolio/laptop/portfolio-laptop8-370-2x.jpg 370w"" media=" (min-width: 1200px)">
+                  <img class=" portfolio__container--img" src="./images/portfolio/tablet/portfolio-tablet8-354.jpg"
+                    alt="Этикетка" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="portfolio__box">
                 <h2 class="portfolio__box--title">Проект LAB</h2>
@@ -256,7 +324,16 @@
                     компании или частном лице.
                   </p>
                 </div>
-                <img class="portfolio__container--img" src="./images/Portfolio-9.jpg" alt="Ноутбук" />
+                <picture>
+                  <source srcset="./images/portfolio/mobile/portfolio-mob9-450.jpg 450w, 
+                  ./images/portfolio/mobile/portfolio-mob9-450-2x.jpg 900w," media="(max-width: 767px)">
+                  <source srcset="./images/portfolio/tablet/portfolio-tablet9-354.jpg 354w,
+                  ./images/portfolio/tablet/portfolio-tablet9-354-2x.jpg 708w," media="(min-width: 768px)">
+                  <source srcset="./images/portfolio/laptop/portfolio-laptop9-370.jpg 370w,
+                  ./images/portfolio/laptop/portfolio-laptop9-370-2x.jpg 370w"" media=" (min-width: 1200px)">
+                  <img class=" portfolio__container--img" src="./images/portfolio/tablet/portfolio-tablet9-354.jpg"
+                    alt="Ноутбук" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" />
+                </picture>
               </div>
               <div class="portfolio__box">
                 <h2 class="portfolio__box--title">Growing Business</h2>

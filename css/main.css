@@ -843,6 +843,9 @@ textarea {
 .team {
   background-color: var(--accent-bg-color);
 }
+.team__list {
+  margin: -15px;
+}
 
 @media screen and (min-width: 768px) {
   .team__list {
@@ -857,7 +860,6 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: -15px;
   }
 }
 .team__title {
@@ -875,10 +877,10 @@ textarea {
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin: 15px;
 }
 @media screen and (min-width: 768px) {
   .team__item {
-    margin: 15px;
     width: 100%;
     max-width: 354px;
   }
@@ -1431,6 +1433,10 @@ textarea {
   display: none;
 }
 
+.menu__icon--cross {
+  position: fixed;
+}
+
 .menu-button.is-open .icon-menu {
   position: absolute;
   display: block;
@@ -1446,13 +1452,13 @@ textarea {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     max-width: 480px;
     width: 100%;
-    -webkit-transform: translate(-50%, -5%);
-            transform: translate(-50%, -5%);
+    -webkit-transform: translate(-50%, -45%);
+            transform: translate(-50%, -45%);
     padding: 40px 48px;
     font-size: 20px;
   }

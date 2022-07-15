@@ -22,6 +22,10 @@
     display: none;
 }
 
+.menu__icon--cross {
+    position: fixed;
+}
+
 .menu-button.is-open .icon-menu {
     position: absolute;
     display: block;
@@ -36,12 +40,12 @@
 
     @media screen and (max-width: 767px) {
         display: none;
-        position: absolute;
+        position: fixed;
         top: 50%;
         left: 50%;
         max-width: 480px;
         width: 100%;
-        transform: translate(-50%, -5%);
+        transform: translate(-50%, -45%);
         padding: 40px 48px;
         font-size: 20px;
 
