@@ -53,6 +53,15 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .overlay {
+        
+        padding-bottom: 200px;
+    padding-top: 200px;
+        min-height: 600px;
+    }
+}
+
 .hero__title {
     margin: auto;
     margin-bottom: 30px;
@@ -70,6 +79,8 @@
     @media screen and(min-width:769px) {
         font-size: 44px;
         line-height: 1.36;
+
+        width: 696px;
     }
 }
 

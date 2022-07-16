@@ -652,6 +652,13 @@ textarea {
     background-image: url(../images/background2x.jpg);
   }
 }
+@media screen and (min-width: 1200px) {
+  .overlay {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    min-height: 600px;
+  }
+}
 .hero__title {
   margin: auto;
   margin-bottom: 30px;
@@ -670,6 +677,7 @@ textarea {
   .hero__title {
     font-size: 44px;
     line-height: 1.36;
+    width: 696px;
   }
 }
 
@@ -1415,7 +1423,7 @@ textarea {
   padding: 0;
   border: none;
   background-color: transparent;
-  z-index: 1;
+  z-index: 2;
 }
 @media screen and (min-width: 768px) {
   .menu-button {
@@ -1433,10 +1441,6 @@ textarea {
   display: none;
 }
 
-.menu__icon--cross {
-  position: fixed;
-}
-
 .menu-button.is-open .icon-menu {
   position: absolute;
   display: block;
@@ -1448,17 +1452,18 @@ textarea {
 
 .menu-container {
   background-color: var(--secondary-text-color);
+  z-index: 1;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     max-width: 480px;
     width: 100%;
-    -webkit-transform: translate(-50%, -45%);
-            transform: translate(-50%, -45%);
+    -webkit-transform: translate(-50%, -5%);
+            transform: translate(-50%, -5%);
     padding: 40px 48px;
     font-size: 20px;
   }
@@ -1466,6 +1471,8 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
