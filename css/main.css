@@ -1480,13 +1480,13 @@ textarea {
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     max-width: 480px;
     width: 100%;
-    -webkit-transform: translate(-50%, -5%);
-            transform: translate(-50%, -5%);
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     padding: 40px 48px;
     font-size: 20px;
   }
