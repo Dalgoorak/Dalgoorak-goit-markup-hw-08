@@ -22,42 +22,43 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .overlay {
-        background-image: url(../images/mobail-bg-2x.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobail-bg-2x.jpg);
     }
 }
 
 @media (min-width: 480px) {
     .overlay {
-        background-image: url(../images/tablet.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet.jpg);
         @media (min-device-pixel-ratio: 2),
             (-webkit-min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
             .overlay {
-                background-image: url(../images/tablet-2x.jpg);
+                background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-2x.jpg);
             }
         }
     }
 }
 @media screen and (min-width: 768px) {
     .overlay {
-        background-image: url(../images/backgound.jpg);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url(../images/backgound.jpg);
     }
     @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .overlay {
-            background-image: url(../images/background2x.jpg);
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/background2x.jpg);
         }
     }
 }
 
 @media screen and (min-width: 1200px) {
     .overlay {
-        
         padding-bottom: 200px;
-    padding-top: 200px;
+        padding-top: 200px;
         min-height: 600px;
     }
 }

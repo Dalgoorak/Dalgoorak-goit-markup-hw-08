@@ -10,6 +10,11 @@
     align-items: center;
     justify-content: space-between;
 
+    @media screen and (max-width: 767px) {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
     @media screen and (min-width:1200px) {
         justify-content: start;
     }
@@ -19,16 +24,16 @@
     color: var(--accent-color);
 }
 
-.header__nav--link {
-    display: block;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
+// .header__nav--link {
+//     display: block;
+//     // padding-top: 32px;
+//     // padding-bottom: 32px;
 
-    color: var(--title-text-color);
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
+//     color: var(--title-text-color);
+//     font-weight: 500;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+// }
 
 /* logo */
 
